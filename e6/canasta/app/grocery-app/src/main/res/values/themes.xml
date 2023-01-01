@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NightAdjusted.Theme.Nia" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="PlatformAdjusted.Theme.Nia" parent="NightAdjusted.Theme.Nia">
+        <item name="android:statusBarColor">@color/black30</item>
+    </style>
+
+    <style name="Theme.Nia" parent="PlatformAdjusted.Theme.Nia" />
+
+    <style name="NightAdjusted.Theme.Splash" parent="Theme.SplashScreen">
+
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Theme.Nia.Splash" parent="NightAdjusted.Theme.Splash">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/canasta3</item>
+        <item name="postSplashScreenTheme">@style/Theme.Nia</item>
+    </style>
+
+</resources>
