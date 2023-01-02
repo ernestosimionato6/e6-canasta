@@ -16,6 +16,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "nowinandroid"
 include(":e6:canasta:app:grocery-app")
+include(":e6:canasta:app:grocery-mock")
+include(":e6:canasta:core:designsystem")
+include(":e6:canasta:core:ui")
 include(":app")
 include(":nia-app")
 include(":app-nia-catalog")
