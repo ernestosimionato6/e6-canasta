@@ -8,14 +8,20 @@ android {
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    lint {
-        checkDependencies = true
-    }
-    namespace = "com.google.samples.apps.nowinandroid.core.designsystem"
+    namespace = "ven.canasta.core.ui"
 }
 
 dependencies {
+    implementation(project(":e6:canasta:core:designsystem"))
+    implementation(project(":core:model"))
+    implementation(project(":core:domain"))
+
+    implementation(libs.androidx.browser)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.coil.kt)
+    implementation(libs.coil.kt.compose)
+    implementation(libs.kotlinx.datetime)
+
     api(libs.androidx.compose.foundation)
     api(libs.androidx.compose.foundation.layout)
     api(libs.androidx.compose.material.iconsExtended)
@@ -24,6 +30,9 @@ dependencies {
     api(libs.androidx.compose.ui.tooling.preview)
     api(libs.androidx.compose.ui.util)
     api(libs.androidx.compose.runtime)
-    lintPublish(project(":lint"))
+    api(libs.androidx.compose.runtime.livedata)
+    api(libs.androidx.metrics)
+    api(libs.androidx.tracing.ktx)
+
     androidTestImplementation(project(":core:testing"))
 }

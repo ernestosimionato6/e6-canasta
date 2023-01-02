@@ -1,4 +1,4 @@
-package com.google.samples.apps.nowinandroid.core.designsystem.theme
+package ven.canasta.core.designsystem.theme2
 
 import android.os.Build
 import androidx.annotation.ChecksSdkIntAtLeast
@@ -172,11 +172,11 @@ val DarkAndroidBackgroundTheme = BackgroundTheme(color = Color.Black)
  *        default theme. If this is `false`, then dynamic theming will be used when supported.
  */
 @Composable
-fun NiaTheme(
+fun Nia2Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     androidTheme: Boolean = false,
     content: @Composable () -> Unit
-) = NiaTheme(
+) = Nia2Theme(
     darkTheme = darkTheme,
     androidTheme = androidTheme,
     disableDynamicTheming = false,
@@ -194,7 +194,7 @@ fun NiaTheme(
  *        supported. This parameter has no effect if [androidTheme] is `true`.
  */
 @Composable
-internal fun NiaTheme(
+internal fun Nia2Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     androidTheme: Boolean = false,
     disableDynamicTheming: Boolean,
