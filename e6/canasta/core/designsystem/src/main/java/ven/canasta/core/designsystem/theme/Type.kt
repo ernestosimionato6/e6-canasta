@@ -24,7 +24,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import ven.canasta.core.designsystem.R
 
-val EniaFamily = FontFamily(
+
+val Enia0Family = FontFamily(
     Font(R.font.eina_regular, FontWeight.W300),
     Font(R.font.eina_regular, FontWeight.W400),
     Font(R.font.eina_semibold, FontWeight.W500),
@@ -147,6 +148,13 @@ val eniaBold = FontFamily(
     Font(R.font.eina_bold),
     Font(R.font.eina_bold)
 );
+
+val enia3Bold = FontFamily(
+    Font(R.font.eina03_bold),
+    Font(R.font.eina03_bold)
+);
+
+val EniaFamily = eniaBold
 
 val eniaBold2 = FontFamily(
     Font(R.font.eina_bold),
