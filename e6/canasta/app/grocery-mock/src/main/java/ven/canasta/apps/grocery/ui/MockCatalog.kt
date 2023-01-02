@@ -35,7 +35,7 @@ import ven.canasta.core.designsystem.component.NiaTextButton
 import ven.canasta.core.designsystem.component.NiaTopicTag
 import ven.canasta.core.designsystem.component.NiaViewToggleButton
 import ven.canasta.core.designsystem.icon.NiaIcons
-import ven.canasta.core.designsystem.theme.NiaTheme
+import ven.canasta.core.designsystem.theme.CanastaTheme
 import ven.canasta.core.designsystem.theme2.Nia2Theme
 
 /**
@@ -43,7 +43,7 @@ import ven.canasta.core.designsystem.theme2.Nia2Theme
  */
 @Composable
 fun MockCatalog() {
-    NiaTheme {
+    Nia2Theme {
         Surface {
             val contentPadding = WindowInsets
                 .systemBars
@@ -413,6 +413,13 @@ fun MockCatalog() {
 @Composable
 fun MockCatalogPreview() {
    Nia2Theme {
+      MockCatalog()
+   }
+}
+@Preview(name="grocery-mocks2", showBackground=true)
+@Composable
+fun MockCatalogPreview2() {
+   CanastaTheme {
       MockCatalog()
    }
 }

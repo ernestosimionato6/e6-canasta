@@ -34,6 +34,7 @@ import javax.inject.Inject
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import ven.canasta.core.designsystem.theme.CanastaTheme
 
 @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 @AndroidEntryPoint
@@ -91,10 +92,11 @@ class MainActivity : ComponentActivity() {
                 onDispose {}
             }
 
-            NiaTheme(
-                darkTheme = darkTheme,
-                androidTheme = shouldUseAndroidTheme(uiState)
-            ) {
+           // NiaTheme(
+           //     darkTheme = darkTheme,
+           //     androidTheme = shouldUseAndroidTheme(uiState)
+           // ) {
+            CanastaTheme{
                 NiaApp(
                     networkMonitor = networkMonitor,
                     windowSizeClass = calculateWindowSizeClass(this),

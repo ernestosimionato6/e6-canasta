@@ -10,19 +10,22 @@ import com.google.samples.apps.nowinandroid.feature.foryou.navigation.forYouScre
 import com.google.samples.apps.nowinandroid.feature.interests.navigation.interestsGraph
 import com.google.samples.apps.nowinandroid.feature.topic.navigation.navigateToTopic
 import com.google.samples.apps.nowinandroid.feature.topic.navigation.topicScreen
+import ven.canasta.feature.grocery.inbox.navigation.groceryInboxNavigationRoute
+import ven.canasta.feature.grocery.inbox.navigation.groceryInboxScreen
 
 @Composable
 fun NiaNavHost(
     navController: NavHostController,
     onBackClick: () -> Unit,
     modifier: Modifier = Modifier,
-    startDestination: String = forYouNavigationRoute
+    startDestination: String = groceryInboxNavigationRoute // forYouNavigationRoute
 ) {
     NavHost(
         navController = navController,
         startDestination = startDestination,
         modifier = modifier,
     ) {
+        groceryInboxScreen()
         forYouScreen()
         bookmarksScreen()
         interestsGraph(

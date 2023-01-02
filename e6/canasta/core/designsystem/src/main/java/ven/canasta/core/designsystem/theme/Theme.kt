@@ -65,7 +65,7 @@ val LightDefaultColorScheme = lightColorScheme(
  * Canasta in Android theme.
  */
 @Composable
-fun NiaTheme(
+fun CanastaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     androidTheme: Boolean = false,
     content: @Composable () -> Unit
