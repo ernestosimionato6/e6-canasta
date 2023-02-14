@@ -5,4 +5,5 @@ plugins {
 
 dependencies {
     implementation(libs.kotlinx.datetime)
+    implementation("androidx.room:room-common:2.4.3")
 }
