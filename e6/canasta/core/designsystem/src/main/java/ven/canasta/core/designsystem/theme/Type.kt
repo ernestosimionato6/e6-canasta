@@ -149,6 +149,18 @@ val eniaBold = FontFamily(
     Font(R.font.eina_bold)
 );
 
+
+val enia3 = FontFamily(
+    Font(R.font.eina03_regular),
+    Font(R.font.eina03_regular)
+);
+
+val enia3SemiBold = FontFamily(
+    Font(R.font.eina03_semibold),
+    Font(R.font.eina03_semibold)
+);
+
+
 val enia3Bold = FontFamily(
     Font(R.font.eina03_bold),
     Font(R.font.eina03_bold)

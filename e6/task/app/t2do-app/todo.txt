@@ -1,0 +1,63 @@
+
+## BACKLOG ##
+
+10. create model classes
+
+12. setup room database
+15  setup dagger-hilt
+
+16. create  task repository
+17. create shared view model
+
+19. setup navigation component
+
+20. list screen:
+    - fab
+    - default list app bar
+    - list app bar actions
+    - search app bar
+
+25. display all tasks
+     +  design task item
+     +  observe database
+     +  show empy content
+     +  create request state
+
+29. task screen:
+     +  new task app bar
+     +  existing task app bar
+     +  get selected task
+     +  priory drop-down
+     +  task content
+     +  display dinamic content
+
+
+35. crud operations:
+     +  limit title length
+     +  bug fix  & field validation
+     +  add task
+     +  display snack bar
+     +  update task
+     +  delete single task
+     +  undo delete task
+     +  search database
+     +  delete all tasks
+
+46. data store
+
+47. list sorting
+    +  create data store repository
+    +  apply sorting in a list
+    +  priority sort drop-down & task composable fix
+
+50. swipe to delete
+    + implementation
+    + animate item visibility
+
+52. splash screen:
+    + design splash screen
+    + implement splash screen
+    + animate splash screen
+
+55. navigation:
+    + transition animations

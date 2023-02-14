@@ -1,44 +1,63 @@
 package ar.ven.apps.gro.feature.inbox.mock.inbox
 
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import com.google.accompanist.flowlayout.FlowColumn
+import androidx.lifecycle.viewmodel.compose.viewModel
 import ven.canasta.core.designsystem.theme.CanastaTheme
+import ven.canasta.feature.grocery.inbox.GroceryListsVM
+import ven.canasta.feature.grocery.inbox.mock.inbox.InboxContent
+import ven.canasta.grocerylist.GroceryList
+import ven.canasta.grocerylist.dummyGroceryLists
 
 @Composable
 public fun InboxView(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navigateToCreateList: () -> Unit = {}
 ) {
-    //var isEmpty by remember { mutableStateOf(true) }
-
-    Column(
-        modifier.fillMaxWidth()
-            .padding( horizontal = 20.dp ),
-
-    ) { // InboxContainer{
+    val viewModel: GroceryListsVM = viewModel()
+    InboxView(
+        modifier,
+        navigateToCreateList = navigateToCreateList,
+        viewModel
+    )
+}
+@Composable
+fun InboxView(
+    modifier: Modifier = Modifier,
+    navigateToCreateList: () -> Unit = {},
+    viewModel: GroceryListsVM
+) {
+    Column { // InboxContainer{
         InboxHeader{
-            InboxTitle("Tus Listas")
-            CreateListButton("Crear nueva")
+            InboxTitle("Tus listas")
+            CreateListButton(
+                "Crear nueva",
+                onClick = navigateToCreateList
+            )
         }
         InboxFilters()
-        InboxContent()
+        InboxContent(
+            viewModel
+        )
     }
 }
-
-
 
 @Preview(name="inbox-view", showBackground=true)
 @Composable
 fun InboxViewPreview() {
    CanastaTheme() {
-       InboxView()
+       InboxView(
+           viewModel = object : GroceryListsVM {
+               override fun getGroceryLists(): List<GroceryList> {
+                   return dummyGroceryLists
+               }
+           }
+       )
    }
 }

@@ -1,0 +1,25 @@
+
+
+### Marketing > Page Sections
+
+# Feature Sections  #
+
+* offset 2x2 grid
+* centered 2x2 grid
+* simple three column with small icons
+* contained in panel
+
+* offset wit feature list
+* with testimonial
+
+* with product screenshot
+
+* with large screenshot
+
+* simple three column with large icons
+
+* with product screenshot
+* with product screenshot panel
+* with product screenhost on left
+
+* with code example panel

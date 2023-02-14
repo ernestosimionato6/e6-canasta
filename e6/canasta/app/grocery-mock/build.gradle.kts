@@ -32,6 +32,12 @@ dependencies {
     implementation(project(":e6:canasta:core:ui"))
     implementation(project(":e6:canasta:core:designsystem"))
 
+    implementation(project(":core:common"))
+    implementation(project(":core:ui"))
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:data"))
+    implementation(project(":core:model"))
+
     implementation(libs.androidx.activity.compose)
     implementation(libs.accompanist.flowlayout)
 }
