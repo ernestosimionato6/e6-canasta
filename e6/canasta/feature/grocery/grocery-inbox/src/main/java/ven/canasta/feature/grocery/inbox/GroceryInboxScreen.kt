@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
+import androidx.lifecycle.viewmodel.compose.viewModel
 import ar.ven.apps.gro.feature.inbox.mock.OnboardingMock
 import com.google.samples.apps.nowinandroid.core.designsystem.theme.NiaTheme
 
@@ -30,9 +31,14 @@ internal fun GroceryInboxRoute(
 }
 
 @Composable
-internal fun GroceryInboxScreen(
+fun GroceryInboxScreen( // internal
+    navigateToCreateList: () -> Unit = {}
 ) {
-    OnboardingMock()
+    val viewModel: GroceryListsViewModel = viewModel()
+
+    OnboardingMock(
+        navigateToCreateList= navigateToCreateList
+    )
 }
 
 @Preview(name="grocery-inbox-screen", showBackground = true)

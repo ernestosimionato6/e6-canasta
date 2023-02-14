@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="ven.canasta.apps.grocery.NiaApplication"
+        android:name="ven.task.apps.NiaApplication"
         android:allowBackup="true"
         android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +16,7 @@
         <profileable android:shell="true" tools:targetApi="q" />
 
         <activity
-            android:name="ven.canasta.apps.grocery.MainActivity"
+            android:name="ven.task.apps.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

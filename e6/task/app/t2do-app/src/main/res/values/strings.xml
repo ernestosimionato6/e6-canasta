@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Organizador Bonaerense</string>
+    <string name="not_connected">⚠️ No podemos conectarnos a internet</string>
+    <string name="hint">hint</string>
+    <string name="done">Done</string>
+</resources>

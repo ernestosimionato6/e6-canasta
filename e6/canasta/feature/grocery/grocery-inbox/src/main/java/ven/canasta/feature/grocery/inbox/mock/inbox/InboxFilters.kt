@@ -12,7 +12,7 @@ import com.google.samples.apps.nowinandroid.core.designsystem.component.NiaTextB
 import ven.canasta.feature.grocery.inbox.mock.component.FilterItem
 
 @Composable
-public fun InboxFilters(
+fun InboxFilters(
     modifier : Modifier = Modifier
 )  {
     FlowRow(
@@ -22,12 +22,4 @@ public fun InboxFilters(
         FilterItem( "Todas" ) { }
         FilterItem( "Creadas por mi" ) { }
     }
-//    FlowRow(mainAxisSpacing = 16.dp) {
-//        NiaOutlinedButton(onClick = {}) {
-//            Text(text = "Todas")
-//        }
-//        NiaOutlinedButton(onClick = {}) {
-//            Text(text = "Creadas por mi")
-//        }
-//    }
 }

@@ -13,6 +13,7 @@ dependencies {
 
     implementation(project(":e6:canasta:core:ui"))
     implementation(project(":e6:canasta:core:designsystem"))
+    implementation(project(":e6:canasta:core:domain"))
 
     implementation(libs.accompanist.flowlayout)
 }

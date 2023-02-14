@@ -1,0 +1,12 @@
+
+### Marketing > Page Sections
+
+# CTA Sections #
+
+
+* simple stacked
+* simple justified
+* centered on panel
+* simple centered ( on brand )
+* panel with app screenshot
+* split with image

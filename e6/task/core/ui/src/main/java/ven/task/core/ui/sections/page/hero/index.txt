@@ -1,0 +1,17 @@
+
+
+### Marketing > Page Sections
+
+# Hero Sections  #
+
+* Simple centered
+* simple centered with background image
+
+* split with image
+* with angled image on right
+
+* Split with screenshot
+* Split with code
+
+* with app screenshot
+* with phone mockup

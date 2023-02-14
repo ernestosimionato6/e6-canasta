@@ -64,7 +64,10 @@ android {
 dependencies {
     implementation(project(":e6:canasta:core:ui"))
     implementation(project(":e6:canasta:core:designsystem"))
+    implementation(project(":e6:canasta:core:domain"))
+//    implementation(project(":e6:canasta:feature:grocery:add-item"))
     implementation(project(":e6:canasta:feature:grocery:grocery-inbox"))
+    implementation(project(":e6:canasta:feature:grocery:create-list"))
     implementation(project(":feature:interests"))
     implementation(project(":feature:foryou"))
     implementation(project(":feature:bookmarks"))

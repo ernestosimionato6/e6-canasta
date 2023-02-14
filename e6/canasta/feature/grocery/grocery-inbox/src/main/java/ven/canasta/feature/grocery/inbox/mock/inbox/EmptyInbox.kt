@@ -1,11 +1,9 @@
 package ven.canasta.feature.grocery.inbox.mock.inbox
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -24,13 +22,8 @@ import ven.canasta.core.designsystem.theme.CanastaTheme
 import ven.canasta.core.designsystem.theme.eniaBold
 import ven.canasta.core.designsystem.theme.eniaSemiBold
 import ven.canasta.feature.grocery.inbox.R
-import ven.canasta.feature.grocery.inbox.mock.Black60
-import ven.canasta.feature.grocery.inbox.mock.Black80
-import ven.canasta.feature.grocery.inbox.mock.Blue80
-import ven.canasta.feature.grocery.inbox.mock.Gray120
-import ven.canasta.feature.grocery.inbox.mock.Gray40
-import ven.canasta.feature.grocery.inbox.mock.Gray80
-import ven.canasta.feature.grocery.inbox.mock.Green60
+import ven.canasta.core.ui.mock.Black60
+import ven.canasta.core.ui.mock.Green60
 
 @Composable
 fun EmptyInbox() {
